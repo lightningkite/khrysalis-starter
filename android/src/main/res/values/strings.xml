@@ -1,13 +1,3 @@
 <resources>
-    <string name="app_name">DIR-S</string>
-    <string name="landing_instructions">Welcome! Please enter your email below so we can send you a login link in your
-        email!
-    </string>
-    <string name="send_email">Send Email</string>
-    <string name="email">Email</string>
-    <string name="try_another_email">Try another email</string>
-    <string name="check_email_instructions">An email has been sent to you with a login link!  Go check your email and tap on the link.</string>
-    <string name="start_alert">Start Alert</string>
-    <string name="start_drill">Start Drill</string>
-    <string name="create_group">Create Group</string>
+    <string name="app_name">Khrysalis Starter</string>
 </resources>

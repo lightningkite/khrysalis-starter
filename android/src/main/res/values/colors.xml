@@ -4,20 +4,4 @@
     <color name="colorPrimaryDark">#1B2B68</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorAccentDark">#961242</color>
-    <color name="safe">#0C0</color>
-    <color name="safeDark">#0A0</color>
-    <color name="drill">#708BD1</color>
-    <color name="drillDark">#53679B</color>
-    <color name="unsafe">#F20</color>
-    <color name="unsafeDark">#B31A02</color>
-    <color name="foreground">#FFF</color>
-    <color name="foregroundFade">#CCC</color>
-    <color name="background">#222</color>
-    <color name="backgroundFade">#333</color>
-    <color name="barForeground">#FFF</color>
-    <color name="barForegroundFade">#AAA</color>
-    <color name="barBackground">@color/colorPrimary</color>
-    <color name="barBackgroundFade">@color/colorPrimaryDark</color>
-    <color name="dialogFade">#8000</color>
-    <color name="dialogBack">@color/background</color>
 </resources>

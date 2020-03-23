@@ -1,9 +1,8 @@
-package com.tresit.khrysalis
+package com.lightningkite.khrysalis.starter
 
-import android.os.Bundle
 import com.lightningkite.khrysalis.android.KhrysalisActivity
+import com.lightningkite.khrysalis.starter.vg.RootVG
 import com.lightningkite.khrysalis.views.ViewGenerator
-import com.tresit.khrysalis.vg.RootVG
 
 class MainActivity : KhrysalisActivity() {
     companion object {

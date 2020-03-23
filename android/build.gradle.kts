@@ -23,7 +23,7 @@ apply {
 //    plugin("com.google.gms.google-services")
 }
 
-val packageName = "com.tresit.khrysalis"
+val packageName = "com.lightningkite.khrysalis.starter"
 
 android {
     //    buildToolsVersion = "28.0.3"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.tresit.khrysalis">
+          package="com.lightningkite.khrysalis.starter">
 
     <application
             android:allowBackup="true"
@@ -12,7 +12,7 @@
 
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD9HgCjYghz5oa173XlXUyRTKFT46MVMg4"/>
 
-        <activity android:name="com.tresit.khrysalis.MainActivity" android:windowSoftInputMode="adjustResize">
+        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
