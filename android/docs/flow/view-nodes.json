@@ -1,0 +1,210 @@
+{
+  "Walking" : {
+    "operations" : [ {
+      "priority" : 0,
+      "stack" : "stack",
+      "viewName" : null
+    }, {
+      "priority" : 1,
+      "stack" : "dialog",
+      "viewName" : "ConfirmDelete"
+    } ],
+    "requires" : [ {
+      "name" : "dialog",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    }, {
+      "name" : "stack",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ ],
+    "depth" : 5,
+    "name" : "Walking",
+    "instantiates" : [ "ConfirmDelete" ]
+  },
+  "MainMap" : {
+    "operations" : [ {
+      "priority" : 1,
+      "stack" : "stack",
+      "viewName" : "Walking"
+    }, {
+      "priority" : 1,
+      "stack" : "stack",
+      "viewName" : "MyGroups"
+    }, {
+      "priority" : 1,
+      "stack" : "stack",
+      "viewName" : "MyAccount"
+    } ],
+    "requires" : [ {
+      "name" : "stack",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ ],
+    "depth" : 4,
+    "name" : "MainMap",
+    "instantiates" : [ "Walking", "MyGroups", "MyAccount" ]
+  },
+  "Root" : {
+    "operations" : [ {
+      "priority" : 3,
+      "stack" : "root",
+      "viewName" : "LandingScreen"
+    } ],
+    "requires" : [ ],
+    "provides" : [ {
+      "name" : "dialog",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : "ObservableStack()",
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    }, {
+      "name" : "root",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : "ObservableStack()",
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "depth" : 0,
+    "name" : "Root",
+    "instantiates" : [ "LandingScreen" ]
+  },
+  "AddChild" : {
+    "operations" : [ {
+      "priority" : 0,
+      "stack" : "dialog",
+      "viewName" : null
+    }, {
+      "priority" : 0,
+      "stack" : "stack",
+      "viewName" : null
+    } ],
+    "requires" : [ {
+      "name" : "dialog",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    }, {
+      "name" : "stack",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ ],
+    "depth" : 6,
+    "name" : "AddChild",
+    "instantiates" : [ ]
+  },
+  "LandingScreen" : {
+    "operations" : [ {
+      "priority" : 1,
+      "stack" : "stack",
+      "viewName" : "CheckEmail"
+    } ],
+    "requires" : [ {
+      "name" : "stack",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ ],
+    "depth" : 1,
+    "name" : "LandingScreen",
+    "instantiates" : [ "CheckEmail" ]
+  },
+  "MyAccount" : {
+    "operations" : [ ],
+    "requires" : [ ],
+    "provides" : [ ],
+    "depth" : 5,
+    "name" : "MyAccount",
+    "instantiates" : [ ]
+  },
+  "MyGroups" : {
+    "operations" : [ {
+      "priority" : 1,
+      "stack" : "dialog",
+      "viewName" : "AddChild"
+    }, {
+      "priority" : 1,
+      "stack" : "dialog",
+      "viewName" : "ConfirmDelete"
+    }, {
+      "priority" : 1,
+      "stack" : "dialog",
+      "viewName" : "CreateGroup"
+    } ],
+    "requires" : [ {
+      "name" : "dialog",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ ],
+    "depth" : 5,
+    "name" : "MyGroups",
+    "instantiates" : [ "AddChild", "ConfirmDelete", "CreateGroup" ]
+  },
+  "Session" : {
+    "operations" : [ {
+      "priority" : 0,
+      "stack" : "session",
+      "viewName" : null
+    }, {
+      "priority" : 3,
+      "stack" : "session",
+      "viewName" : "MainMap"
+    } ],
+    "requires" : [ {
+      "name" : "session",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ {
+      "name" : "session",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : "ObservableStack()",
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "depth" : 3,
+    "name" : "Session",
+    "instantiates" : [ "MainMap" ]
+  },
+  "CheckEmail" : {
+    "operations" : [ {
+      "priority" : 0,
+      "stack" : "stack",
+      "viewName" : null
+    }, {
+      "priority" : 1,
+      "stack" : "stack",
+      "viewName" : "Session"
+    } ],
+    "requires" : [ {
+      "name" : "stack",
+      "type" : "ObservableStack[ViewGenerator]",
+      "default" : null,
+      "onPath" : null,
+      "kotlinType" : "ObservableStack<ViewGenerator>"
+    } ],
+    "provides" : [ ],
+    "depth" : 2,
+    "name" : "CheckEmail",
+    "instantiates" : [ "Session" ]
+  }
+}

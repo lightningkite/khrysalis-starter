@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.lightningkite.khrysalis.views.android.SwapView
+            android:id="@+id/content"
+            tools:stackId="root"
+            tools:stackDefault="@layout/landing_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <com.lightningkite.khrysalis.views.android.SwapView
+            android:id="@+id/dialog"
+            tools:stackId="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+</FrameLayout>

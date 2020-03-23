@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Tiny">
+        <item name="android:textColor">@color/foregroundFade</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Subheader">
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="DestructiveButton">
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/destructive_button_background</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="UnimportantButton">
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:tint">@color/foreground</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="Tab">
+        <item name="android:textColor">@color/tab_foreground</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:drawableTint">@color/tab_foreground</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TabBack">
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+</resources>

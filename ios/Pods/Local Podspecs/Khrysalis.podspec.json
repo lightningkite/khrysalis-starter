@@ -1,0 +1,54 @@
+{
+  "name": "Khrysalis",
+  "version": "0.1.0",
+  "summary": "Standard library for code translated from Kotlin to Swift",
+  "description": "The Khrysalis Gradle plugin translates code from Kotlin to Swift, but in order to do so, a set of libraries must be present on both sides.  This is the iOS portion.",
+  "homepage": "https://github.com/lightningkite/khrysalis",
+  "license": "GPL",
+  "authors": {
+    "Captain": "joseph@lightningkite.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/lightningkite/khrysalis.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "ios/Khrysalis/**/*.swift",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "requires_arc": true,
+  "swift_versions": "5.0",
+  "xcconfig": {
+    "SWIFT_VERSION": "5.0"
+  },
+  "dependencies": {
+    "Alamofire": [
+
+    ],
+    "AlamofireImage": [
+
+    ],
+    "KeychainAccess": [
+
+    ],
+    "UITextView+Placeholder": [
+
+    ],
+    "Cosmos": [
+      "~> 19.0"
+    ],
+    "SearchTextField": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxRelay": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

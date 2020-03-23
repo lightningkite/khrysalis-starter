@@ -1,0 +1,18 @@
+graph LR;
+A("Root");
+B("LandingScreen");
+A== "root" ==>B;
+C("CheckEmail");
+B-->C;
+D("Session");
+C-.-D;
+E("MainMap");
+D== "session" ==>E;
+F("Walking");
+E-->F;
+G("MyGroups");
+E-->G;
+H("MyAccount");
+E-->H;
+I("AddChild");
+G-- "dialog" -->I;

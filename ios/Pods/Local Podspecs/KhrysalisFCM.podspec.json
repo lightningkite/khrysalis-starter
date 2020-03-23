@@ -1,0 +1,39 @@
+{
+  "name": "KhrysalisFCM",
+  "version": "0.1.0",
+  "summary": "Firebase Cloud Messaging for Khrysalis",
+  "description": "Shared code for notifications using Khrysalis.  This is the iOS portion.",
+  "homepage": "https://github.com/lightningkite/khrysalis",
+  "license": "GPL",
+  "authors": {
+    "Captain": "joseph@lightningkite.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/lightningkite/khrysalis.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "ios-fcm/KhrysalisFCM/**/*.swift",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "requires_arc": true,
+  "swift_versions": "5.0",
+  "xcconfig": {
+    "SWIFT_VERSION": "5.0"
+  },
+  "dependencies": {
+    "Khrysalis": [
+
+    ],
+    "Firebase/Analytics": [
+
+    ],
+    "Firebase/Messaging": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

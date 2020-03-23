@@ -1,0 +1,15 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/Khrysalis
+DEFINES_MODULE = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage/AlamofireImage.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Cosmos/Cosmos.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/KeychainAccess/KeychainAccess.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SearchTextField/SearchTextField.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/UITextView_Placeholder/UITextView+Placeholder.modulemap"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage/AlamofireImage.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Cosmos/Cosmos.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/KeychainAccess/KeychainAccess.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SearchTextField/SearchTextField.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/UITextView_Placeholder/UITextView+Placeholder.modulemap" -import-underlying-module -Xcc -fmodule-map-file="${SRCROOT}/${MODULEMAP_FILE}"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/../../../khrysalis
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage" "${PODS_CONFIGURATION_BUILD_DIR}/Cosmos" "${PODS_CONFIGURATION_BUILD_DIR}/KeychainAccess" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SearchTextField"
+SWIFT_VERSION = 5.0
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

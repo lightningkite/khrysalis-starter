@@ -1,0 +1,6 @@
+module KhrysalisFCM {
+  umbrella header "KhrysalisFCM-umbrella.h"
+
+  export *
+  module * { export * }
+}

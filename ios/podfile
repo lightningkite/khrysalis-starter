@@ -1,0 +1,9 @@
+
+platform :ios, '11.0'
+use_modular_headers!
+
+target 'DIR-S' do
+    pod 'Khrysalis', :path => '~/StudioProjects/khrysalis/khrysalis.podspec'
+    pod 'KhrysalisMaps', :path => '~/StudioProjects/khrysalis/KhrysalisMaps.podspec'
+    pod 'KhrysalisFCM', :path => '~/StudioProjects/khrysalis/KhrysalisFCM.podspec'
+end

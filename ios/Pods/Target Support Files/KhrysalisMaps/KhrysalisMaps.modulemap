@@ -1,0 +1,6 @@
+module KhrysalisMaps {
+  umbrella header "KhrysalisMaps-umbrella.h"
+
+  export *
+  module * { export * }
+}

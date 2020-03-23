@@ -1,0 +1,6 @@
+module Khrysalis {
+  umbrella header "Khrysalis-umbrella.h"
+
+  export *
+  module * { export * }
+}
