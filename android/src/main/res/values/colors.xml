@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#1B2B68</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorAccentDark">#961242</color>
+    <color name="colorNavBar">#009688</color>
+    <color name="colorHeader1">#FFF</color>
 </resources>
